@@ -8,9 +8,9 @@ the LAN. Caddy terminates TLS and is the only public face.
 
 ```sh
 apt update && apt install -y git python3
-git clone https://github.com/nathanstefanik/ducker-timer /opt/ducker-timer
-cp /opt/ducker-timer/deploy/ducker-timer.service /etc/systemd/system/
-systemctl enable --now ducker-timer
+git clone https://github.com/nathanstefanik/duck-timer /opt/duck-timer
+cp /opt/duck-timer/deploy/duck-timer.service /etc/systemd/system/
+systemctl enable --now duck-timer
 curl -s 127.0.0.1:8000/ | head -3   # should print the create page
 ```
 
@@ -39,7 +39,7 @@ to forward.
 ## 4. Update
 
 ```sh
-cd /opt/ducker-timer && git pull && systemctl restart ducker-timer
+cd /opt/duck-timer && git pull && systemctl restart duck-timer
 ```
 
 Note: timer state is in-memory, so a restart drops live timers.

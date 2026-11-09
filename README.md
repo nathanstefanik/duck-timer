@@ -1,4 +1,4 @@
-# ducker-timer
+# duck-timer
 
 A shared duck race countdown timer at [timer.nathanstefanik.xyz](https://timer.nathanstefanik.xyz).
 

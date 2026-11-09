@@ -3,8 +3,8 @@ Description=duck race timer
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /opt/ducker-timer/server.py
-WorkingDirectory=/opt/ducker-timer
+ExecStart=/usr/bin/python3 /opt/duck-timer/server.py
+WorkingDirectory=/opt/duck-timer
 DynamicUser=yes
 NoNewPrivileges=yes
 ProtectSystem=strict
