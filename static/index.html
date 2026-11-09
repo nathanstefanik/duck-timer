@@ -25,10 +25,10 @@
             placeholder="racer names, one per line (2-12)&#10;leave blank for 6 plain ducks"></textarea>
         </p>
         <p>
-          speed distribution:
-          <label><input type="radio" name="dist" value="normal" checked> normal</label>
-          <label><input type="radio" name="dist" value="uniform"> uniform</label>
-          <label><input type="radio" name="dist" value="exponential"> exponential</label>
+          step distribution:
+          <label title="mean 1, sd 1.5: about a quarter of steps go backwards"><input type="radio" name="dist" value="normal" checked> normal</label>
+          <label title="0 to 2: always forward, steady"><input type="radio" name="dist" value="uniform"> uniform</label>
+          <label title="mean 1: always forward, occasional lunges"><input type="radio" name="dist" value="exponential"> exponential</label>
         </p>
         <button>make timer</button>
       </form>
