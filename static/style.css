@@ -44,19 +44,15 @@ body.timer-page {
     margin: 0px 0px 16px 0px;
 }
 
-body.timer-page #pond {
+#pond {
     max-height: calc(100vh - 240px);
     overflow-y: auto;
 }
 
 .lane {
     display: flex;
-    height: 50px;
-    border-bottom: 1px dashed;
-}
-
-body.timer-page .lane {
     height: 54px;
+    border-bottom: 1px dashed;
 }
 
 .rank {
@@ -90,14 +86,10 @@ body.timer-page .lane {
         0 0 / 12px 12px;
 }
 
-body.timer-page .duck {
-    top: 0px;
-    bottom: auto;
-}
 .duck {
     position: absolute;
     left: calc(var(--pos, 0) * (100% - 56px));
-    bottom: 0px;
+    top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -11,7 +11,7 @@ document.getElementById("new-timer").addEventListener("submit", async (e) => {
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(fields),
   });
-  const data = await resp.json();
+  const data = await resp.json().catch(() => ({ error: "server error, try again" }));
   if (resp.ok) location.href = `/t/${data.code}`;
   else document.getElementById("error").textContent = data.error;
 });
